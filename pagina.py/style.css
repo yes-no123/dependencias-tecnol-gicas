@@ -1,0 +1,87 @@
+body {
+    font-family: Arial,  sans-serif; /* Familia de fuentes */
+    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #3a3a3a; /* El color del fondo de la página web */
+    color: #333333; /* El color del texto*/ 
+}
+h1 {
+    color: #ffffff; /* El color de la cabecera */
+    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+
+h2{
+color:#b7bce9    
+}
+li{
+color: #aaddff
+}
+@keyframes color-change {
+    0% {
+      color: rgb(28, 92, 209);
+    }
+  
+    50% {
+      color: rgb(47, 92, 129);
+    }
+  
+    100% {
+      color: rgb(94, 35, 255);
+    }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
+/* Cambio de color al pasar el mouse */
+.cambio-color:hover {
+    color: rgb(4, 0, 255); /* Cambia el color del texto al pasar el mouse */
+    transition: color 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  }
+  
+  /* Animación de desvanecimiento */
+  .desvanecer {
+    opacity: 0; /* Inicialmente, el elemento está completamente transparente */
+    transition: opacity 0.5s; /* Agrega una transición suave de 0.5 segundos */
+  }
+  
+  .desvanecer:hover {
+    opacity: 0,3; /* Al pasar el mouse, el elemento se vuelve completamente visible */
+  }
+
+  /* Animación desplazar */
+  .desplazar {
+    transform: translateX(-100%); /* Mueve el elemento fuera del área visible */
+    transition: transform 0.5s; /* Agrega una transición suave de 0.5 segundos */
+  }
+  
+  .desplazar:hover {
+    transform: translateX(0); /* Al pasar el mouse, el elemento se desplaza hacia adentro */
+  }
+  
+  /* Animación rotación infinita */
+  .rotacion-infinita {
+    animation: girar 2s; /* La animación "girar" dura 2 segundos y se repite infinitamente */
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg); /* La rotación inicial es de 0 grados */
+    }
+    to {
+      transform: rotate(360deg); /* La rotación final es de 360 grados */
+    }
+  }
+  
+  /* Animación de rebote */
+  .rebote {
+    animation: rebotar 1s infinite; /* La animación "rebotar" dura 1 segundo y se repite infinitamente */
+  }
+  
+  @keyframes rebotar {
+    0%, 100% {
+      transform: translateY(0); /* Estado inicial y final: sin desplazamiento vertical */
+    }
+    50% {
+      transform: translateY(-20px); /* Pico del rebote: desplazamiento hacia arriba */
+    }
+}
